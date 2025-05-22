@@ -1,0 +1,7 @@
+ncatbot>=0.1.0
+openai>=1.12.0,<2.0.0 # 锁定主版本，避免v2的重大变更
+anthropic>=0.20.0,<1.0.0 # 同样锁定主版本，API可能有较大变动
+zhipuai>=2.0.0 # 智谱AI的官方SDK
+python-dotenv>=1.0.0
+requests>=2.28.0
+loguru>=0.7.0

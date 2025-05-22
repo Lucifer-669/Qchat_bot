@@ -1,0 +1,16 @@
+[Unit]
+Description=QQ Chatbot Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/chatbot
+ExecStart=/home/ubuntu/chatbot/venv/bin/python bot.py qq
+Restart=always
+RestartSec=10
+# 确保数据目录权限
+ExecStartPre=/bin/mkdir -p /home/ubuntu/chatbot/data
+ExecStartPre=/bin/chown -R ubuntu:ubuntu /home/ubuntu/chatbot/data
+
+[Install]
+WantedBy=multi-user.target

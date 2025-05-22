@@ -1,0 +1,4 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "QQ聊天机器人"
