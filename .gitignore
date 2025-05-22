@@ -1,0 +1,8 @@
+# Ignore sensitive files and directories
+.env
+data/
+__pycache__/
+logs/
+napcat/
+.idea/
+*.pyc
